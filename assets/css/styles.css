@@ -1,0 +1,672 @@
+:root {
+    --general-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    --altura-header: 50px;
+    --color-back-dark: black;
+    --color-back-light: white;
+    --color-link-light: lightgray;
+    --color-link-dark: grey;
+}
+
+.dark_mode {
+    background-color: var(--color-back-dark);
+    color: var(--color-back-light);    
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;
+    color: var(--color-link-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+body {
+    padding: 1rem;
+    background-color: white;
+}
+
+/* ==================================>               Header */
+
+header {
+    height: var(--altura-header);
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    z-index: 1000;
+}
+
+header > .subheader {
+    max-width: 700px;
+    max-height: 500px;
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+header > .subheader #idx4 {
+    font-size: 25px;
+}
+
+header > .subheader #idx5 {
+    font-size: 25px;
+}
+
+header > .subheader #idx6 {
+    font-size: 25px;
+}
+
+header > .subheader #idx7 {
+    font-size: 25px;
+}
+
+header > .subheader #idx8 {
+    color: red;
+    font-size: 25px;
+}
+
+header > #main-nav.scrolled {
+    background-color: lightgray;
+}
+
+header > #main-nav {
+    max-width: 1024px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+header > #main-nav #carrito {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    z-index: 1000; 
+}
+
+header > #main-nav #modo {
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    z-index: 2; 
+}
+
+header > #main-nav #idx3 {
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    left: 250px;
+    z-index: 2;
+}
+
+header > #main-nav #idx2 {
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    left: 170px;
+    z-index: 2;
+}
+
+header > #main-nav #idx1 {
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    left: 80px;
+    z-index: 2;
+}
+
+header > #main-nav #idx0 {
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+    z-index: 2;
+}
+
+header > .more {
+    font-size: 18px;
+    cursor: pointer;
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+}
+
+header > .filterA {
+    font-size: 13px;
+    cursor: pointer;
+    position: absolute;
+    top: 380px;
+    left: 50px;
+    width: 80px;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+header > .filterB {
+    font-size: 13px;
+    cursor: pointer;
+    position: absolute;
+    top: 380px;
+    left: 200px;
+    width: 80px;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+header > .filterC {
+    font-size: 13px;
+    cursor: pointer;
+    position: absolute;
+    top: 380px;
+    left: 350px;
+    width: 80px;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+header > .filterD {
+    font-size: 13px;
+    cursor: pointer;
+    position: absolute;
+    top: 380px;
+    left: 500px;
+    width: 80px;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+header > .filterA:hover {
+    background-color: grey;
+    transform: scale(0.9);
+}
+
+header > .filterB:hover {
+   background-color: grey;
+   transform: scale(0.9);
+}
+
+header > .filterC:hover {
+   background-color: grey;
+   transform: scale(0.9);
+}
+
+header > .filterD:hover {
+   background-color: grey;
+   transform: scale(0.9);
+}
+
+.hide {
+    display: none;
+}
+
+header > .inicio {
+    background-color: lightcoral;
+    display: flex;
+    height: 340px;
+    align-items: right;
+    z-index: 0;
+}
+
+
+.header img {
+   z-index: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}  
+
+.footer1 {
+    background-color: lightgray;
+    width: 100%;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer1 .subfooterA #ftr0 {
+    font-weight: bold;
+}
+
+.footer1 .subfooterB #ftr1 {
+    font-weight: bold;
+}
+
+.footer1 .subfooterC #ftr2 {
+    font-weight: bold;
+}
+
+.footer1 .subfooterD #ftr3 {
+    font-weight: bold;
+}
+
+.footer2 {
+    background-color: lightsalmon;
+    width: 100%;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+}
+
+.footer2 > #ftr10 {
+    background-color: lightsalmon;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 30px;
+    left: 0px;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.footer2 > #ftr11 {
+    background-color: lightsalmon;
+    color: gray;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 40px;
+    left: 0px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+/* ==================================>               Products */
+
+.products {
+    padding-top: 3rem;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    max-width: 1024px;
+    margin: 0, auto;
+    gap: 1rem;
+    margin-top: 450px;
+    overflow-y: scroll;
+}
+
+.product {
+    border-radius: 1rem;
+    box-shadow: var(--general-shadow);
+    background-color: #ffffff;
+}
+
+.auxiliar {
+    font-size: 16px;
+    position: fixed;
+    top: 150px;
+    left: 100px;
+    width: 350px;
+    max-height: 80px;
+    display: flex;
+    align-items: top;
+}
+
+.auxiliar > .product .product__img {
+    background-color: lightgray;
+}
+
+.auxiliar > .product .product__info {
+    background-color: lightgray;
+}
+
+.auxiliar > .close {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.auxiliar > .close .cerrar {
+    font-size: 30px;
+    color: red;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.product__img {
+    padding: 1rem;
+}
+
+.product__info {
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.product__info h4 {
+    min-height: 54px;
+}
+
+.product__info h4:hover {
+    transform: scale(0.9);
+}
+
+.product__info span {
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.product__info .bx-plus {
+    background-color: #000000;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 1.3rem;
+}
+
+.product__info .bx_plus:active {
+    color: green;
+    background-color: cyan;
+    transform: scale(0.9);
+}
+
+.product__info .bx-plus:hover {
+    color: lightgreen;
+    transform: scale(0.9);
+}
+
+.product__info .soldOut {
+    display: inline-block;
+    color: #fff;
+    background-color: lightcoral;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* ==================================>               Cart */
+
+.cart {
+    height: calc(100vh - var(--altura-header));
+    width: 400px;
+    background-color: #ffffff;
+    position: fixed;
+    top: var(--altura-header);
+    right: -100%;
+    transition: right 0.3s;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#carrito > h3 {
+    font-size: 15px;
+}
+
+.cart__show {
+    right: 0;
+}
+
+.cart__products {
+   background-color: lavender;
+    height: 85%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.cart__products i {
+    cursor: pointer;
+}
+
+.cart__product {
+
+    box-shadow: var(--general-shadow);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.cart__product__img {
+   background-color: #ccc;
+    width: 40%;
+    border-radius: 1rem;
+}
+
+.cart__product__body {
+   width: 60%;
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   gap: 0.3rem;
+}
+
+.cart__product__body_op {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart__product__body_op .bx-trash {
+    color: lightcoral;
+}
+
+.cart__total {
+   height: 15%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 1rem;
+   gap: 0.5rem;
+}
+
+.cart__total_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button_buy {
+    padding: 0.5rem;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+@media (min-width: 300px) && (max-width: 444px) {
+
+.footer1 {
+    font-size: 12px;
+    top: 6000px;
+}
+
+.cart {
+    width: 100%;
+}
+
+.footer2 > #ftr10 {
+    top: 350px;
+    width: 300px;
+    height: 200px;
+}
+
+.footer2 > #ftr10 p {
+    font-size: 0.5rem;
+}
+
+.footer2 > #ftr11 {
+    top: 350px;
+    width: 300px;
+    height: 200px;
+}
+
+.footer2 > #ftr11 p {
+    font-size: 0.5rem;
+}
+
+header > #main-nav #idx3 {
+    font-size: 0.7rem;
+    left: 130px;
+}
+
+
+
+header > #main-nav #idx2 {
+    font-size: 0.7rem;
+    left: 90px;
+}
+
+header > #main-nav #idx1 {
+    font-size: 0.7rem;
+    left: 40px;
+}
+
+header > #main-nav #idx0 {
+    font-size: 0.7rem;
+    position: relative;
+    top: 0px;
+    left: -10px;
+    
+}
+
+header > .more {
+    left: 10px;
+    top: 190px;
+}
+
+header > .filterA {
+    font-size: 0.5rem;
+    left: 10px;
+    top: 360px;
+}
+
+header > .filterB {
+    font-size: 0.5rem;
+    left: 120px;
+    top: 360px;
+}
+
+header > .filterC {
+    font-size: 0.5rem;
+    left: 230px;
+    top: 360px;
+}
+
+header > .filterD {
+    font-size: 0.5rem;
+    left: 300px;
+    top: 360px;
+}
+
+}
+@media (min-width: 500px) && (max-width: 1024px) {
+    .cart {
+        width: 100%;
+    }
+
+    .footer2 {
+        font-size: 12px;
+        top: 5000px;
+    }
+
+    .footer2 > #ftr10 {
+        top: 350px;
+        width: 400px;
+        height: 200px;
+    }
+
+    .footer2 > #ftr10 p {
+        font-size: 0.5rem;
+    }
+
+    .footer2 > #ftr11 {
+        top: 400px;
+        width: 400px;
+        height: 200px;
+    }
+
+    .footer2 > #ftr11 p {
+        font-size: 0.5rem;
+    }    
+            
+    header > #main-nav #idx3 {
+        font-size: 0.7rem;
+        left: 130px;
+    }
+    
+    header > #main-nav #idx2 {
+        font-size: 0.7rem;
+        left: 90px;
+    }
+
+    header > #main-nav #idx1 {
+        font-size: 0.7rem;
+        left: 40px;
+    }
+
+    header > #main-nav #idx0 {
+        font-size: 0.7rem;
+        position: relative;
+        top: 0px;
+        left: -10px;
+        
+    }
+    
+    header > .more {
+        left: 10px;
+        top: 190px;
+    }
+    
+    header > .filterA {
+        font-size: 0.7rem;
+        left: 10px;
+        top: 360px;
+    }
+
+    header > .filterB {
+        font-size: 0.7rem;
+        left: 120px;
+        top: 360px;
+    }
+
+    header > .filterC {
+        font-size: 0.7rem;
+        left: 230px;
+        top: 360px;
+    }
+
+    header > .filterD {
+        font-size: 0.7rem;
+        left: 340px;
+        top: 360px;
+    }
+}    
